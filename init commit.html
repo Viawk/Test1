@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Simple Calculator</title>
+</head>
+<body>
+ <input type="number" name="a" placeholder="Введите значение переменной a"/>
+ <input type="number" name="b" placeholder="Введите значение переменной b"/>
+ <button onclick="calc()">Посчитать</button>
+ <p id="result"></p>
+ <script>
+ let a = document.getElementsByName("a")[0]
+ let b = document.getElementsByName("b")[0]
+ let result = document.getElementById("result")
+ function calc() {
+ result.innerHTML = parseFloat(a.value) + parseFloat(b.value)
+ }
+ </script>
+</body>
+</html>
